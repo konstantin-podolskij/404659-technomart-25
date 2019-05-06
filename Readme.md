@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Константин Подольский](https://up.htmlacademy.ru/htmlcss/25/user/404659).
-* Наставник: `Неизвестно`.
+* Наставник: [Dmitry Bruslik](https://up.htmlacademy.ru/htmlcss/25/user/531555).
 
 ---
 
