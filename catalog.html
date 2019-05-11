@@ -41,6 +41,9 @@
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  
             </address>
         </div>
+
+        <!--ДОБАВИТЬ ЭЛЕМЕНТЫ АВТОРИЗОВАННОГО ПОЛЬЗОВАТЕЛЯ-->
+        
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -61,8 +64,30 @@
             <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
             <li class="breadcrumbs-item current-item">Перфораторы</li>
         </ul>
-        <h2>Перфораторы</h1>
-        <section>
+        <h1>Перфораторы</h1>
+        <section class="catalog-filters">
+            <h2 class="catalog-filters-title">Производители:</h2>
+            <label>
+                <input type="checkbox" name="model" checked>Bosh
+            </label>
+            <label>
+                    <input type="checkbox" name="model">Интерскол
+            </label> 
+            <label>
+                    <input type="checkbox" name="model" checked>Makita
+            </label> 
+            <label>
+                    <input type="checkbox" name="model">Dewalt
+            </label>
+            <h2 class="catalog-filters-title">Питание:</h2>
+            <label>
+                    <input type="radio" name="feed">Аккумуляторные
+            </label>
+            <label>
+                    <input type="radio" name="feed">Сетевые
+            </label>
+        </section> 
+        <section class="catalog">
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <h3>
@@ -104,6 +129,7 @@
                     <p class="catalog-item-image">
                         <img src="#" width="" height="" alt="Перфоратор BOSCH BFG 2000">
                     <p class="catalog-item-price">
+                        <span class="old-price"></span>
                         <span class="current-price">12500 р.</span>
                     </p>
                     <p>
@@ -111,6 +137,7 @@
                         <a class="button-add" href="#">в закладки</a>
                     </p>
                 </li>
+                <!--ДОБАВИТЬ ОСТАЛЬНЫЕ-->
             </ul>
         </section>       
     </main>
