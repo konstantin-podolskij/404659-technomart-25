@@ -5,8 +5,61 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header>
-
+    <header class="main-header">
+      <div class="header-top">
+        <img width="220"height="47" src="http://placehold.it/220x47" alt="Логотип" class="header-logo">
+        <input type="text" name="search" class="header-top-find" placeholder="Поиск:">
+        <!--
+          Закладки и Корзина
+          <input type="text" name="bookmark" class="header-top-cart" placeholder="" value="0">
+          <input type="text" name="total" class="header-top-cart" placeholder="" value="0">
+        -->
+        <ul class="header-top-right">
+          <li class="bookmark">
+            <a href="#">Закладки: 0</a>
+          </li>
+          <li class="cart">
+            <a href="#">Корзина: 0</a>
+          </li>
+          <li class="">
+            <a href="#">Оформить заказ</a> 
+          </li>
+        </ul>
+      </div>
+      <h1>
+        Интернет-магазин</br>
+        строительных материалов</br> 
+        и инструментов для ремонта</br>
+      </h1>
+      <div class="header-contacts">
+        <span class="header-contacts-phone">
+          <a href="tel:+78125550555">+7(812)-555-05-55</a>
+        </span>
+        <address class="header-contacts-address">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  
+        </address>
+      </div>
+      <div class="user-buttons">
+        <ul class="user-button-list">
+          <li class="user-button-item">
+            <a href="#" class="button-header button-login">Войти</a>
+          </li>
+          <li class="user-button-item">
+            <a href="#" class="button-header button-registr">Регистрация</a>
+          </li>
+        <ul>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="#">Главная</a></li>
+          <li class="navigation-item"><a href="#">Компания</a></li>
+          <li class="navigation-item"><a href="#">Каталог</a></li>
+          <li class="navigation-item"><a href="#">Новости</a></li>
+          <li class="navigation-item"><a href="#">Спецпредложения</a></li>
+          <li class="navigation-item"><a href="#">Доставка</a></li>
+          <li class="navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="about">
@@ -24,7 +77,7 @@
           <li class="company-item">Автотрейдинг</li>
           <li class="company-item">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="button about-button">
+        <a href="#" class="button about-button">Подробнее о компании</a>
       </section>
 
       <section class="contacts">
@@ -32,14 +85,14 @@
         <p class="contacts-info">
           Вы можете забрать товар сами, заехав в наш офис:
         </p>
-        <img src="http://placehold.it/150x100" class="contact-image">
+        <img width="150" height="100" src="http://placehold.it/150x100" class="contact-image">
         <a href="#" class="button info-button">Заблудились? Напишите нам!</a>
       </section>
     </main>
     <footer>
       <section class="footer-item">
           <h2 class="visually-hidden">Футер 1</h2>
-          <img width="220" height="68" alt="Логотип «Техномарт»" src="http://placehold.it/240x24">
+          <img width="220" height="68" alt="Логотип «Техномарт»" src="http://placehold.it/220x68">
           <nav class="footer-nav-top"> 
             <ul class="nav-list-top">
               <li class="nav-item-top">Компания</li>
