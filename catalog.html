@@ -9,12 +9,6 @@
       <div class="header-top">
         <img width="220"height="47" src="http://placehold.it/220x47" alt="Логотип" class="header-logo">
         <input type="text" name="search" class="header-top-find" placeholder="Поиск:">
-        <!--
-          Закладки и Корзина
-          <input type="text" name="bookmark" class="header-top-cart" placeholder="" value="0">
-          <input type="text" name="total" class="header-top-cart" placeholder="" value="0">
-          ?????????
-        -->
         <ul class="header-top-right">
           <li class="bookmark">
             <a href="#">Закладки: 0</a>
@@ -29,9 +23,7 @@
       </div>
       <div class="header-middle">
         <h1>
-            Интернет-магазин</br>
-            строительных материалов</br> 
-            и инструментов для ремонта</br>
+            Интернет-магазин строительных материалов и инструментов для ремонта
         </h1>
         <div class="header-contacts">
             <span class="header-contacts-phone">
@@ -62,22 +54,23 @@
             <li class="breadcrumbs-item"><a href="index.html">Домой</a></li>
             <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
             <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
-            <li class="breadcrumbs-item current-item">Перфораторы</li>
+            <li class="breadcrumbs-item current">Перфораторы</li>
         </ul>
         <h1>Перфораторы</h1>
         <section class="catalog-filters">
             <h2 class="catalog-filters-title">Производители:</h2>
+            <!--Заменил имена input на brand-->
             <label>
-                <input type="checkbox" name="model" checked>Bosh
+                <input type="checkbox" name="brand" checked>Bosh
             </label>
             <label>
-                    <input type="checkbox" name="model">Интерскол
+                    <input type="checkbox" name="brand">Интерскол
             </label> 
             <label>
-                    <input type="checkbox" name="model" checked>Makita
+                    <input type="checkbox" name="brand" checked>Makita
             </label> 
             <label>
-                    <input type="checkbox" name="model">Dewalt
+                    <input type="checkbox" name="brand">Dewalt
             </label>
             <h2 class="catalog-filters-title">Питание:</h2>
             <label>
@@ -97,7 +90,7 @@
                     <p class="catalog-item-image">
                         <img src="#" width="" height="" alt="Перфоратор BOSCH BFG 3000">
                     <p class="catalog-item-price">
-                        <span class="old-price"><del>22500 р.</del></span> <!--заменить на стиль-->
+                        <span class="old-price"><del>22500 р.</del></span> <!--del заменить на стиль-->
                         <span class="current-price">15500 р.</span>
                     </p>
                     <p>
@@ -142,51 +135,50 @@
         </section>       
     </main>
     <footer>
-      <section class="footer-item">
-          <h2 class="visually-hidden">Футер 1</h2>
-          <img width="220" height="68" alt="Логотип «Техномарт»" src="http://placehold.it/220x68">
-          <nav class="footer-nav-top"> 
-            <ul class="nav-list-top">
-              <li class="nav-item-top">Компания</li>
-              <li class="nav-item-top">Новости</li>
-              <li class="nav-item-top">Каталог</li>
-              <li class="nav-item-top">Доставка</li>
-              <li class="nav-item-top">Контакты</li>
+        <section class="footer-top">
+            <!--Разделил верхний футер на левую и правую часть на div-->
+            <div class="footer-top-left">
+                <img width="220" height="68" alt="Логотип «Техномарт»" src="http://placehold.it/220x68">
+                <address class="footer-address">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</br> 
+                    +7 (812) 555-05-55
+                </address>
+            </div>
+            <div class="footer-top-right">
+                <ul class="nav-list-top">
+                    <li class="nav-item-top">Компания</li>
+                    <li class="nav-item-top">Новости</li>
+                    <li class="nav-item-top">Каталог</li>
+                    <li class="nav-item-top">Доставка</li>
+                    <li class="nav-item-top">Контакты</li>
+                </ul>
+                <ul class="nav-list-bottom">
+                    <li class="nav-item-bottom">Материалы</li>
+                    <li class="nav-item-bottom">Техника</li>
+                    <li class="nav-item-bottom">Инструмент</li>
+                    <li class="nav-item-bottom">Спецпредложения</li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="footer-copyright">
+                © 2010–2019 Компания «Техномарт»</br> 
+                Все права защищены
+            </div>
+            <ul class="social-list">
+                <li class="social-item"><a href="#">Вконтакте</a></li>
+                <li class="social-item"><a href="#">Facebook</a></li>
+                <li class="social-item"><a href="#">Instagram</a></li>
             </ul>
-          </nav>
-          <address class="footer-address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</br> 
-            +7 (812) 555-05-55
-          </address>
-          <nav class="footer-nav-bottom">
-            <ul class="nav-list-bottom">
-              <li class="nav-item-bottom">Материалы</li>
-              <li class="nav-item-bottom">Техника</li>
-              <li class="nav-item-bottom">Инструмент</li>
-              <li class="nav-item-bottom">Спецпредложения</li>
-            </ul>
-        </nav>
-      </section>
-      <section class="footer-item">
-          <h2 class="visually-hidden">Футер 2</h2>
-          <div class="footer-copyright">
-          © 2010–2019 Компания «Техномарт»</br> 
-          Все права защищены
-          </div>
-          <ul class="social-list">
-            <li class="social-item"><a href="#">Вконтакте</a></li>
-            <li class="social-item"><a href="#">Facebook</a></li>
-            <li class="social-item"><a href="#">Instagram</a></li>
-          </ul>
-          <div class="footer-mail">
-            Обратная связь:</br>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="footer-dev">
-            Разработано — </br>
-            <a href="https://htmlacademy.ru">htmlacademy.ru</a>
-          </div>
-      </section>
+            <div class="footer-mail">
+                Обратная связь:</br>
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="footer-dev">
+                Разработано — </br>
+                <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+            </div>
+        </section>
     </footer>
   </body>
 </html>
