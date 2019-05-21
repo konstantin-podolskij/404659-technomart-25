@@ -262,7 +262,24 @@
     </footer>
 
     <section class="popup popup-contact-us">
-      <!-- Здесь будет форма-->
+      <form action="#" method="post">
+        <fieldset>
+          <legend class="visually-hidden">Напишите нам</legend>
+          <p>
+            <label for="contact-us-name">Ваше имя:</label>
+            <input type="text" id="contact-us-name" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="contact-us-email">Ваш e-mail:</label>
+            <input type="email" id="contact-us-email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="contact-us-letter">Текст письма:</label>
+            <textarea id="contact-us-letter" name="letter" placeholder="В свободной форме"></textarea>
+          </p>
+        </fieldset>
+        <input type="submit" name="submit-contact-us" value="Отправить">
+      </form>
       <span class="popup-close" aria-label="Закрыть форму">x</span>
     </section>
 
