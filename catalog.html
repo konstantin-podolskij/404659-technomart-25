@@ -7,8 +7,10 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/svg/logo-technomart.svg">
-        <input type="text" name="search" class="header-top-find" placeholder="Поиск:">
+        <a class="logo-button" href="index.html" aria-label="На главную">
+            <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/svg/logo-technomart.svg">
+        </a>
+        <input type="text" name="search" class="header-top-find" placeholder="Поиск:" aria-label="Строка поиска">
         <ul class="header-top-right">
           <li class="bookmark">
             <a href="#">Закладки: 0</a>
@@ -39,7 +41,7 @@
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a href="#">Главная</a></li>
+          <li class="navigation-item"><a href="index.html">Главная</a></li>
           <li class="navigation-item"><a href="#">Компания</a></li>
           <li class="navigation-item"><a href="#">Каталог</a></li>
           <li class="navigation-item"><a href="#">Новости</a></li>
@@ -51,15 +53,26 @@
     </header>
     <main>
         <ul class="breadcrumbs">
-            <li class="breadcrumbs-item"><a href="index.html">Домой</a></li>
+            <li class="breadcrumbs-item"><a href="index.html" aria-label="На главную">Домой</a></li>
             <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
             <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
             <li class="breadcrumbs-item current">Перфораторы</li>
         </ul>
         <h1>Перфораторы</h1>
+
+        <form class="filters" action="#" method="get">
+            <h2>Фильтр</h2>
+            <fieldset class="filter-price">
+                <legend>Цена:</legend>
+                <label for="price-range" class="visually-hidden">Диапазон цен</label>
+                <input type="range" name="price-range" id="price-range" min="1" max="50000" step="1">
+                <label for="min-price" class="visually-hidden">Минимальная цена</label>
+                <input type="text" name="min-price" id="min-price" placeholder="0">
+                <label for="max-price" class="visually-hidden">Максимальная цена</label>
+                <input type="text" name="max-price" id="max-price" placeholder="30000">
+            </fieldset>
         <section class="catalog-filters">
             <h2 class="catalog-filters-title">Производители:</h2>
-            <!--Заменил имена input на brand-->
             <label>
                 <input type="checkbox" name="brand" checked>Bosh
             </label>
