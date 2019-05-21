@@ -115,8 +115,22 @@
             </fieldset>
             <input type="submit" value="Показать" class="filters-apply">
         </form>   
-         
+
         <section class="catalog"> 
+
+            <h2 class="visually-hidden">Товары</h2>
+
+            <section class="catalog-sorting">
+                <h3>Сортировка</h3>
+                <ul class="sort-by">
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>
+                <li><a class="sort-button sort-button-asc active" aria-label="Сортировка по увеличению цены"></a></li>
+                <li><a class="sort-button sort-button-desc" aria-label="Сортировка по уменьшению цены"></a></li>
+                </ul>
+            </section>
+        
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <h3>
@@ -267,7 +281,9 @@
         <section class="footer-top">
             <!--Разделил верхний футер на левую и правую часть на div-->
             <div class="footer-top-left">
-                <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/svg/logo-technomart.svg">
+                <a class="logo-button" href="index.html" aria-label="На главную">
+                    <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/svg/logo-technomart.svg">
+                </a>
                 <address class="footer-address">
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</br> 
                     +7 (812) 555-05-55
@@ -310,13 +326,13 @@
         </section>
     </footer>
     <section class="popup popup-added-to-cart">
-        <img class="icon success-icon" src="http://placehold.it/60x60" width="60" height="60" alt="Успешно">
+        <img class="icon success-icon" src="http://placehold.it/60x60" width="60" height="60" alt="Успешно добавлен">
         <h2>Товар добавлен в корзину!</h2>
         <div class="added-to-cart-controls">
           <a class="button" href="#">Оформить заказ</a>
           <a class="button" href="#">Продолжить покупки</a>
         </div>
-        <span class="popup-close">x</span>
+        <span class="popup-close" aria-label="Закрыть форму">x</span>
       </section>
   </body>
 </html>
