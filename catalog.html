@@ -71,29 +71,51 @@
                 <label for="max-price" class="visually-hidden">Максимальная цена</label>
                 <input type="text" name="max-price" id="max-price" placeholder="30000">
             </fieldset>
-        <section class="catalog-filters">
-            <h2 class="catalog-filters-title">Производители:</h2>
-            <label>
-                <input type="checkbox" name="brand" checked>Bosh
-            </label>
-            <label>
-                    <input type="checkbox" name="brand">Интерскол
-            </label> 
-            <label>
-                    <input type="checkbox" name="brand" checked>Makita
-            </label> 
-            <label>
-                    <input type="checkbox" name="brand">Dewalt
-            </label>
-            <h2 class="catalog-filters-title">Питание:</h2>
-            <label>
-                    <input type="radio" name="power-type">Аккумуляторные
-            </label>
-            <label>
-                    <input type="radio" name="power-type">Сетевые
-            </label>
 
-        </section> 
+            <fieldset class="filter-brand">
+                    <legend>Производители:</legend>
+                    <ul class="filter-brand-list">
+                        <li>
+                            <label>
+                                <input type="checkbox" name="brand" checked>Bosh
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                    <input type="checkbox" name="brand">Интерскол
+                            </label> 
+                        </li>
+                        <li>
+                            <label>
+                                    <input type="checkbox" name="brand" checked>Makita
+                            </label> 
+                        </li>
+                        <li>
+                            <label>
+                                    <input type="checkbox" name="brand">Dewalt
+                            </label>
+                        </li>
+                    </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Питание:</legend>
+                <ul>
+                    <li>
+                        <label>
+                                <input type="radio" name="power-type">Аккумуляторные
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                                <input type="radio" name="power-type">Сетевые
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="Показать" class="filters-apply">
+        </form>   
+         
         <section class="catalog"> 
             <ul class="catalog-list">
                 <li class="catalog-item">
