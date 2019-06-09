@@ -256,6 +256,7 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+  vertical-align: baseline
 }
 
 .header-contacts {
@@ -1367,7 +1368,12 @@ a {
   background-color: #fff;
 }
 
-.user-name:active {
+.user-name a {
+  color: inherit;
+}
+
+.user-name:active,
+.user-name:active a {
   color: #bfc2c4;
 }
 
