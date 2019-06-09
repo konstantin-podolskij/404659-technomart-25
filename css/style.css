@@ -1398,7 +1398,7 @@ a {
 
 .popup-map {
   width: 940px;
-  min-height: 446px;
+  height: 446px;
 
   box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
 }
