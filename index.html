@@ -363,17 +363,19 @@
         <div class="contact-us-container">
           <fieldset>
             <legend class="visually-hidden">Напишите нам</legend>
-            <p>
-              <label for="contact-us-name">Ваше имя:</label>
-              <input type="text" id="contact-us-name" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="contact-us-email">Ваш e-mail:</label>
-              <input type="email" id="contact-us-email" name="email" placeholder="email@example.com">
-            </p>
+            <div class="text-field-wrap">
+              <p class="flex-wrap">
+                <label for="contact-us-name">Ваше имя:</label>
+                <input class="popup-text-field text-field-small" type="text" id="contact-us-name" name="name" placeholder="Имя Фамилия">
+              </p>
+              <p class="flex-wrap">
+                <label for="contact-us-email">Ваш e-mail:</label>
+                <input class="popup-text-field text-field-small" type="email" id="contact-us-email" name="email" placeholder="email@example.com">
+              </p>
+            </div>
             <p>
               <label for="contact-us-letter">Текст письма:</label>
-              <textarea id="contact-us-letter" name="letter" placeholder="В свободной форме"></textarea>
+              <textarea id="contact-us-letter" class="popup-text-field text-field-big" name="letter" placeholder="В свободной форме"></textarea>
             </p>
           </fieldset>
         </div>
