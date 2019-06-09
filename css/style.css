@@ -1867,7 +1867,7 @@ a {
 .sort-button::before {
   content: "";
 
-  display: inline-block;
+  /*display: inline-block;*/
   position: absolute;
 
   border: 11px solid #c5c5c5;
