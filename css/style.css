@@ -442,13 +442,13 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
-  max-height: 266px;
+  height: 266px;
 }
 
 .promo-item-small {
   position: relative;
   width: 300px;
-  min-height: 123px;
+  height: 123px;
 }
 
 .promo-item-small::before {
@@ -1381,7 +1381,7 @@ a {
 
 .popup-submit-background .button {
   padding: 10px 0 10px;
-  min-width: 460px;
+  width: 460px;
 }
 
 .popup-map {
@@ -2181,7 +2181,7 @@ a {
 
 .popup-item-added {
   margin: 0 auto;
-  max-width: 620px;
+  width: 620px;
 
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
@@ -2201,8 +2201,8 @@ a {
   content: "";
 
   position: absolute;
-  left: 80px;
-  top: 48px;
+  left: 82px;
+	top: 50px;
 
   width: 66px;
   height: 66px;
