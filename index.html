@@ -133,7 +133,7 @@
           <ul class="popular-goods-list">
             <li class="catalog-item catalog-item-index">
               <ul class="catalog-item-options">
-                <li><a class="button button-purchase-item" href="purchase.html">Купить</a></li>
+                <li><a class="button button-purchase-item call-item-added" href="purchase.html">Купить</a></li>
                 <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
               </ul>
               <a href="#">
@@ -147,7 +147,7 @@
             </li>
             <li class="catalog-item catalog-item-index">
               <ul class="catalog-item-options">
-                <li><a class="button button-purchase-item" href="purchase.html">Купить</a></li>
+                <li><a class="button button-purchase-item call-item-added" href="purchase.html">Купить</a></li>
                 <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
               </ul>
               <a href="#">
@@ -161,7 +161,7 @@
             </li>
             <li class="catalog-item catalog-item-index">
               <ul class="catalog-item-options">
-                <li><a class="button button-purchase-item" href="purchase.html">Купить</a></li>
+                <li><a class="button button-purchase-item call-item-added" href="purchase.html">Купить</a></li>
                 <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
               </ul>
               <a href="#">
@@ -175,7 +175,7 @@
             </li>
             <li class="catalog-item catalog-item-index catalog-item-new">
               <ul class="catalog-item-options">
-                <li><a class="button button-purchase-item" href="purchase.html">Купить</a></li>
+                <li><a class="button button-purchase-item call-item-added" href="purchase.html">Купить</a></li>
                 <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
               </ul>
               <a href="#">
@@ -289,10 +289,10 @@
             <p class="contacts-info">
               Вы можете забрать товар сами, заехав в наш офис:
             </p>
-            <a class="map" href="https://yandex.ru/maps/" aria-label="Открыть карту">
+            <a class="map call-map" href="https://yandex.ru/maps/" aria-label="Открыть карту">
                 <img width="300" height="158" src="img/map-small.png" class="contact-image" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             </a>
-            <a href="#" class="button button-red" href="write.html">Заблудились? Напишите нам!</a>
+            <a href="#" class="button button-red call-write-us" href="write.html">Заблудились? Напишите нам!</a>
           </section>
       </div>
 
@@ -386,9 +386,25 @@
 
     <section class="popup popup-map">
       <h2 class="visually-hidden">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</h2>
-      <div id="popup-map"></div>
+      <div class="popup-map-script" id="popup-map"></div>
+      <a class="map-accessible-picture" href="https://yandex.ru/maps/">
+        <img width="940" height="446" src="img/map-big.png">
+      </a>
       <span class="popup-cross popup-close" aria-label="Закрыть карту"></span>
     </section>
+
+    <section class="popup popup-item-added">
+	    <h2>Товар добавлен в корзину!</h2>
+	    <div class="popup-controls-background">
+	      <div class="item-added-container">
+	        <div class="item-added-controls">
+	          <a class="button button-red" href="#">Оформить заказ</a>
+	          <button class="button item-added-close popup-close" type="button">Продолжить покупки</button>
+	        </div>
+	      </div>
+	    </div>
+	    <span class="popup-cross popup-close" aria-label="Закрыть форму"></span>
+	  </section>
 
     <script src="js/script.js" type="text/javascript"></script>
   </body>

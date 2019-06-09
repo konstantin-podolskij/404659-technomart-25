@@ -52,10 +52,10 @@ a {
 
 @keyframes popup-open {
   0% {
-    transform: translate(-50%, -5000px);
+    transform: translate(-50%, -100vh);
   }
-  80% {
-    transform: translate(-50%, -150px);
+  50% {
+    transform: translate(-50%, -35%);
   }
   100% {
     transform: translate(-50%, -50%);
