@@ -15,7 +15,7 @@
             <a class="logo-button" href="index.html" aria-label="На главную">
               <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/svg/logo-technomart.svg">
             </a>
-            <input type="text" name="search" class="header-search-form" placeholder="Поиск:" aria-label="Строка поиска">
+            <input type="text" name="search" id="header-search" class="header-search-form" placeholder="Поиск:" aria-label="Строка поиска">
             <a class="bookmarks" href="#">Закладки: 0</a>
             <a class="cart" href="#">Корзина: 0</a>
             <a class="order" href="#">Оформить заказ</a>
@@ -82,13 +82,13 @@
           </div>
           <div class="promo-bottom-row">
             <div class="promo-item promo-item-slider">
-                <input type="radio" name="toggle-slide" id="slide-1">
-                <input type="radio" name="toggle-slide" id="slide-2" checked>
+                <input class="visually-hidden-input" type="radio" name="toggle-slide" id="slide-1">
+                <input class="visually-hidden-input" type="radio" name="toggle-slide" id="slide-2" checked>
                 <div class="slider-controls">
-                  <label class="label-slide label-slide-one" for="slide-1"></label>
-                  <label class="label-slide label-slide-two" for="slide-2"></label>
-                  <label class="arrow-label-slide arrow-label-left" for="slide-1"></label>
-                  <label class="arrow-label-slide arrow-label-right" for="slide-2"></label>
+                  <label class="label-slide label-slide-one" for="slide-1" tabindex="0"></label>
+                  <label class="label-slide label-slide-two" for="slide-2" tabindex="0"></label>
+                  <label class="arrow-label-slide arrow-label-left" for="slide-1" tabindex="0"></label>
+                  <label class="arrow-label-slide arrow-label-right" for="slide-2" tabindex="0"></label>
                 </div>
                 <div class="slides">
                   <div class="slide-one">
@@ -216,13 +216,13 @@
               </p>
             </div>
             <div class="service-details">
-              <input type="radio" id="service-delivery" name="service-toggle" checked>
-              <input type="radio" id="service-warranty" name="service-toggle">
-              <input type="radio" id="service-credit" name="service-toggle">
+              <input type="radio" id="service-delivery" class="visually-hidden-input" name="service-toggle" checked>
+              <input type="radio" id="service-warranty" class="visually-hidden-input" name="service-toggle">
+              <input type="radio" id="service-credit" class="visually-hidden-input" name="service-toggle">
               <ul class="services-list">
-                <li class="services-list-item"><label class="button services-list-button" for="service-delivery" href="#">Доставка</label></li>
-                <li class="services-list-item"><label class="button services-list-button" for="service-warranty" href="#">Гарантия</label></li>
-                <li class="services-list-item"><label class="button services-list-button" for="service-credit" href="#">Кредит</label></li>
+                <li class="services-list-item"><label class="button services-list-button" for="service-delivery">Доставка</label></li>
+                <li class="services-list-item"><label class="button services-list-button" for="service-warranty">Гарантия</label></li>
+                <li class="services-list-item"><label class="button services-list-button" for="service-credit">Кредит</label></li>
               </ul>
               <div class="service-description">
                 <div class="service-description-block service-description-delivery">

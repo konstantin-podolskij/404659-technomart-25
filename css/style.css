@@ -24,6 +24,19 @@ a {
   overflow: hidden;
 }
 
+.visually-hidden-input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+
+  border: 0;
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+}
+
 .popup {
   display: none;
 }
@@ -624,7 +637,8 @@ a {
 
   border-top: none;
   border-right: none;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .arrow-label-right {
@@ -633,7 +647,8 @@ a {
 
   border-top: none;
   border-right: none;
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+	        transform: rotate(-135deg);
 }
 
 .slider-button {
@@ -667,9 +682,11 @@ a {
   top: 38px;
 }
 
+/*
 .promo-item-slider input[type="radio"] {
   display: none;
 }
+*/
 
 
 
@@ -775,7 +792,8 @@ a {
   top: 50%;
   left: 50%;
 
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .popular-brands-item:hover,
@@ -1372,8 +1390,8 @@ a {
   color: inherit;
 }
 
-.user-name:active,
-.user-name:active a {
+.user-name:active a,
+.user-name a:active  {
   color: #bfc2c4;
 }
 
@@ -1396,8 +1414,8 @@ a {
   fill: #32425c;
 }
 
-.user-name:active path,
-.user-name:active path {
+.user-name-profile:active path,
+.user-name-logout:active path {
   fill: #c5c5c5;
 }
 
@@ -1489,7 +1507,8 @@ a {
   border: 2px solid #dcdfe3;
   border-left: none;
   border-bottom: none;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 
@@ -1573,7 +1592,8 @@ a {
   width: 180px;
   height: 2px;
   background-color: #d7dcde;
-  transform: translateY(39px);
+  -webkit-transform: translateY(39px);
+	        transform: translateY(39px);
 }
 
 .price-range-filler {
@@ -1645,10 +1665,11 @@ a {
   text-transform: uppercase;
 }
 
+/*
 .filters input[type="radio"],
 .filters input[type="checkbox"] {
   display: none;
-}
+}*/
 
 .checkbox-span-unchecked,
 .checkbox-span-checked,
@@ -1926,6 +1947,7 @@ a {
 }
 
 .price-before-placeholder {
+  display: block;
   margin: 0;
   padding: 0;
   height: 18px;
