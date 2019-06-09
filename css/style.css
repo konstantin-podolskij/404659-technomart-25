@@ -50,6 +50,42 @@ a {
   z-index: 100;
 }
 
+@keyframes popup-open {
+  0% {
+    transform: translate(-50%, -5000px);
+  }
+  80% {
+    transform: translate(-50%, -150px);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.popup-show {
+  display: block;
+
+  animation-name: popup-open;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(-50%, -50%);
+  }
+  20%, 60% {
+    transform: translate(-53%, -50%);
+  }
+  40%, 80% {
+    transform: translate(-47%, -50%);
+  }
+}
+
+.popup-error {
+  animation-name: shake;
+  animation-duration: 0.5s;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -1293,7 +1329,7 @@ a {
   width: 460px;
 }
 
-.popup-close {
+.popup-cross {
   position: absolute;
 	top: 9px;
 	right: 9px;
@@ -1402,6 +1438,15 @@ a {
 
   box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
 }
+
+.map-accessible-picture {
+  position: absolute;
+}
+
+.popup-map-script {
+  z-index: 101;
+}
+
 
 .user-area {
   margin: 0;
