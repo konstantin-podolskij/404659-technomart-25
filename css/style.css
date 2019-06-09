@@ -18,10 +18,6 @@ a {
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
-  width: 1px;
-  height: 1px;
-  padding: 0;
-
   border: 0;
   clip: rect(0 0 0 0);
 
@@ -277,7 +273,7 @@ a {
   position: relative;
 
   margin: 0;
-  padding: 9px 49px 8px 71px;
+  padding: 10px 50px 8px 70px;
 
   font-size: 21px;
   line-height: 21px;
@@ -1664,6 +1660,11 @@ a {
   left: -35px;
 }
 
+.catalog-label-checkbox,
+.catalog-label-radio {
+	  cursor: pointer;
+}
+	
 .catalog-checkbox:checked ~ .checkbox-span-checked,
 .catalog-checkbox:not(:checked) ~ .checkbox-span-unchecked,
 .catalog-radio:checked ~ .radio-span-checked,
@@ -1728,7 +1729,7 @@ a {
 .filters-apply {
   margin: 0;
   margin-top: 75px;
-  padding: 9px 38px 9px 38px;
+  padding: 10px 40px 10px 40px;
 
   font-size: 13px;
   line-height: 18px;
@@ -1822,8 +1823,8 @@ a {
   position: absolute;
 
   border: 11px solid #c5c5c5;
-  border-right-width: 6px;
-  border-left-width: 6px;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
   border-right-color: transparent;
   border-left-color: transparent;
 }
@@ -1831,16 +1832,16 @@ a {
 .sort-button:hover::before,
 .sort-button:focus::before {
   border: 11px solid #231f20;
-  border-right-width: 6px;
-  border-left-width: 6px;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
   border-right-color: transparent;
   border-left-color: transparent;
 }
 
 .sort-button-active::before {
   border: 11px solid #ee3643;
-  border-right-width: 6px;
-  border-left-width: 6px;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
   border-right-color: transparent;
   border-left-color: transparent;
 }
