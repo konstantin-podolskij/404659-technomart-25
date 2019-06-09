@@ -83,3 +83,32 @@ if (popupMap) {
     }
   });
 }
+
+
+
+
+var openItemAdded = document.querySelectorAll(".call-item-added");
+	if (openItemAdded) {
+  var popupItemAdded = document.querySelector(".popup-item-added");
+  var closeItemAdded = popupItemAdded.querySelectorAll(".popup-close");
+  for (var i=0; i<openItemAdded.length; i++) {
+    openItemAdded[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popupItemAdded.classList.add("popup-show");
+    });
+  };
+  for (var n=0; n<closeItemAdded.length; n++) {
+    closeItemAdded[n].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popupItemAdded.classList.remove("popup-show");
+    });
+  };
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popupItemAdded.classList.contains("popup-show")) {
+        popupItemAdded.classList.remove("popup-show");
+      }
+    }
+  });
+}
