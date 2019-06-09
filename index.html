@@ -82,13 +82,13 @@
           </div>
           <div class="promo-bottom-row">
             <div class="promo-item promo-item-slider">
-                <input class="visually-hidden-input radio-slide-one" type="radio" name="toggle-slide" id="slide-1">
-                <input class="visually-hidden-input radio-slide-two" type="radio" name="toggle-slide" id="slide-2" checked>
+                <input class="visually-hidden-input radio-slide-one" type="radio" name="toggle-slide" id="slide-1" tabindex="0">
+                <input class="visually-hidden-input radio-slide-two" type="radio" name="toggle-slide" id="slide-2" tabindex="0" checked>
                 <div class="slider-controls">
-                  <label class="label-slide label-slide-one" for="slide-1" tabindex="0"></label>
-                  <label class="label-slide label-slide-two" for="slide-2" tabindex="0"></label>
-                  <label class="arrow-label-slide arrow-label-left" for="slide-1" tabindex="0"></label>
-                  <label class="arrow-label-slide arrow-label-right" for="slide-2" tabindex="0"></label>
+                  <label class="label-slide label-slide-one" for="slide-1"></label>
+                  <label class="label-slide label-slide-two" for="slide-2"></label>
+                  <label class="arrow-label-slide arrow-label-left" for="slide-1"></label>
+                  <label class="arrow-label-slide arrow-label-right" for="slide-2"></label>
                 </div>
                 <div class="slides">
                   <div class="slide-one">
@@ -216,13 +216,13 @@
               </p>
             </div>
             <div class="service-details">
-              <input type="radio" id="service-delivery" class="visually-hidden-input service-delivery" name="service-toggle" checked>
-              <input type="radio" id="service-warranty" class="visually-hidden-input service-warranty"" name="service-toggle">
-              <input type="radio" id="service-credit" class="visually-hidden-input service-credit" name="service-toggle">
+              <input type="radio" id="service-delivery" class="visually-hidden-input service-input service-delivery" name="service-toggle" checked>
+              <input type="radio" id="service-warranty" class="visually-hidden-input service-input service-warranty" name="service-toggle">
+              <input type="radio" id="service-credit" class="visually-hidden-input service-input service-credit" name="service-toggle">
               <ul class="services-list">
-                <li class="services-list-item"><label class="button services-list-button" for="service-delivery">Доставка</label></li>
-                <li class="services-list-item"><label class="button services-list-button" for="service-warranty">Гарантия</label></li>
-                <li class="services-list-item"><label class="button services-list-button" for="service-credit">Кредит</label></li>
+                <li class="services-list-item"><label class="button service-delivery-label" for="service-delivery">Доставка</label></li>
+                <li class="services-list-item"><label class="button service-warranty-label" for="service-warranty">Гарантия</label></li>
+                <li class="services-list-item"><label class="button service-credit-label" for="service-credit">Кредит</label></li>
               </ul>
               <div class="service-description">
                 <div class="service-description-block service-description-delivery">
