@@ -1339,7 +1339,8 @@ a {
 	
 	background: url("../img/svg/icon-close.svg") no-repeat;
 	
-	cursor: pointer;
+  cursor: pointer;
+  z-index: 503;
 }
 
 .popup-contact-us .flex-wrap {
@@ -1401,6 +1402,14 @@ a {
   resize: none;
 }
 
+.popup-text-field:hover {
+  border-color: #b5b5b5;
+}
+
+.popup-text-field:focus {
+  border-color: #ee3643;
+}
+
 .popup-contact-us label {
   margin: 0;
   margin-bottom: 10px;
@@ -1441,12 +1450,17 @@ a {
 
 .map-accessible-picture {
   position: absolute;
+
+  z-index: 501;
 }
 
 .popup-map-script {
-  z-index: 101;
-}
+  position: absolute;
+  width: 100%;
+  height: 446px;
 
+  z-index: 502;
+}
 
 .user-area {
   margin: 0;

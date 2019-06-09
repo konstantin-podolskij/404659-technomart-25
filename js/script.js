@@ -112,3 +112,37 @@ var openItemAdded = document.querySelectorAll(".call-item-added");
     }
   });
 }
+
+
+// Подключение интерактивной карты
+var mapInteractive = document.querySelector(".popup-map-script");
+if (mapInteractive) {
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('popup-map', {
+                center: [59.939419, 30.316818],
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+            ),
+
+            myPlacemarkWithContent = new ymaps.Placemark([59.938631, 30.323055], {
+                hintContent: 'Собственный значок метки с контентом',
+                balloonContent: 'HTML Academy, first level',
+            }, {
+                iconLayout: 'default#imageWithContent',
+                iconImageHref: 'https://i.ya-webdesign.com/images/pin-clipart-map-pin-5.png', 
+
+                iconImageSize: [27, 48], 
+                iconImageOffset: [-12, -48],
+                iconContentOffset: [15, 15],
+                iconContentLayout: MyIconContentLayout
+            });
+
+        myMap.geoObjects
+            .add(myPlacemarkWithContent);
+    });
+}
