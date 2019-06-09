@@ -1424,8 +1424,12 @@ a {
   background-color: #fff;
 }
 
-.user-name a {
+.user-name-link {
   color: inherit;
+}
+
+.user-name-profile {
+  display: block;
 }
 
 .user-name a:active {
@@ -1873,6 +1877,7 @@ a {
 
 .sort-button {
   position: relative;
+  display: block;
 
   font-size: 0;
 
@@ -1912,7 +1917,7 @@ a {
 .sort-button-asc::before,
 .sort-button-asc:hover::before,
 .sort-button-asc:focus::before {
-  top: -10px;
+  top: 4px;
   right: 10px;
 
   border-top: none;
@@ -1921,7 +1926,7 @@ a {
 .sort-button-desc::before,
 .sort-button-desc:hover::before,
 .sort-button-desc:focus::before {
-  top: -10px;
+  top: 4px;
   right: -22px;
 
   border-bottom: none;
