@@ -219,7 +219,7 @@ a {
   width: 14px;
   height: 16px;
 
-  background-image: url("../img/icon-bookmark.svg");
+  background-image: url("../img/svg/icon-bookmark.svg");
   opacity: 0.3;
 }
 
@@ -237,7 +237,7 @@ a {
   width: 15px;
   height: 15px;
 
-  background-image: url("../img/icon-cart.svg");
+  background-image: url("../img/svg/icon-cart.svg");
   opacity: 0.3;
 }
 
@@ -352,7 +352,7 @@ a {
   width: 19px;
   height: 19px;
 
-  background-image: url("../img/icon-phone.svg");
+  background-image: url("../img/svg/icon-phone.svg");
 }
 
 .header-contacts-address {
@@ -733,8 +733,6 @@ a {
   display: none;
 }
 */
-
-
 
 .button-red {
   padding: 10px 0 10px;
