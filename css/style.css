@@ -147,16 +147,6 @@ a {
 
 .logo-button,
 .logo-footer {
-  /*
-  margin: 0;
-  display: block;
-  min-width: 220px;
-
-  text-align: center;
-
-  background-color: #ee3643;
-  box-shadow: 0 5px 0 #b52933;
-  */
   position: relative;
   margin: 0;
   padding: 0;
@@ -225,8 +215,6 @@ a {
   background-repeat: no-repeat;
   background-position:15px center;
   background-color: transparent;
-  
-
 }
 
 .header-search-form:hover {
