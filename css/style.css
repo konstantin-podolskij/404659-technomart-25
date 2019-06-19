@@ -147,6 +147,7 @@ a {
 
 .logo-button,
 .logo-footer {
+  /*
   margin: 0;
   display: block;
   min-width: 220px;
@@ -155,6 +156,20 @@ a {
 
   background-color: #ee3643;
   box-shadow: 0 5px 0 #b52933;
+  */
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #ee3643;
+  -webkit-box-shadow: 0 5px 0 0 #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
+}
+
+.logo-button img, .logo-footer img{
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 12px;
+  padding-bottom: 6px;
 }
 
 .logo-button:hover,
@@ -192,16 +207,26 @@ a {
   fill: #ee3643;
 }
 
-.header-search-form {
-  margin: 0;
-  padding: 0;
-  padding-left: 48px;
-  width: 270px;
+.header-search-form {  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  width: 222px;
+  height: 42px;
 
   color: #fff;
 
-  background-color: #293449;
-  border: none;
+  padding: 0;
+  padding-left: 48px;
+
+  border: 0;
+  background-image: url("../img/svg/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position:15px center;
+  background-color: transparent;
+  
+
 }
 
 .header-search-form:hover {
