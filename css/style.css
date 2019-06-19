@@ -168,6 +168,30 @@ a {
   box-shadow: 0 5px 0 #8e1e26;
 }
 
+.header-search-label {
+  position: absolute;
+  top: 13px;
+  left: 238px;
+
+  width: 17px;
+  height: 17px;
+
+  background: transparent;
+  border: none;
+  opacity: 0.3;
+}
+
+.header-search-form:hover ~ .header-search-label,
+.header-search-form:focus ~ .header-search-label,
+.header-search-label:hover,
+.header-search-label:focus {
+  opacity: 1;
+}
+
+.header-search-form:focus ~ .header-search-label path {
+  fill: #ee3643;
+}
+
 .header-search-form {
   margin: 0;
   padding: 0;
@@ -728,12 +752,6 @@ a {
   top: 38px;
 }
 
-/*
-.promo-item-slider input[type="radio"] {
-  display: none;
-}
-*/
-
 .button-red {
   padding: 10px 0 10px;
 
@@ -765,7 +783,6 @@ a {
   background-color: #f9f5f0;
 }
 
-
 .popular-goods-header,
 .popular-brands-header {
   display: flex;
@@ -780,7 +797,6 @@ a {
 .popular-goods-header h2,
 .popular-brands-header h2 {
   margin: 0;
-  /*padding: 30px 0 30px 28px;*/
 
   font-size: 30px;
   line-height: 30px;
@@ -939,12 +955,6 @@ a {
 .service-description p {
   margin-bottom: 0;
 }
-
-/*
-.service-details input[type="radio"] {
-  display: none;
-}
-*/
 
 .services-list-item:not(.services-list-active) {
   margin-bottom: 1px;
@@ -1604,7 +1614,6 @@ a {
 	        transform: rotate(45deg);
 }
 
-
 .catalog-header-wrap {
   display:flex;
   margin-bottom: 20px;
@@ -1621,7 +1630,6 @@ a {
 
 .catalog-header h2 {
   margin: 0;
-  /*padding: 30px 0 30px 30px;*/
 
   font-size: 30px;
   line-height: 30px;
@@ -1762,12 +1770,6 @@ a {
   text-transform: uppercase;
 }
 
-/*
-.filters input[type="radio"],
-.filters input[type="checkbox"] {
-  display: none;
-}*/
-
 .checkbox-span-unchecked,
 .checkbox-span-checked,
 .radio-span-unchecked,
@@ -1786,7 +1788,7 @@ a {
 
 .catalog-label-checkbox,
 .catalog-label-radio {
-	  cursor: pointer;
+	cursor: pointer;
 }
 	
 .catalog-checkbox:checked ~ .checkbox-span-checked,
@@ -1944,7 +1946,6 @@ a {
 .sort-button::before {
   content: "";
 
-  /*display: inline-block;*/
   position: absolute;
 
   border: 11px solid #c5c5c5;
@@ -2018,7 +2019,7 @@ a {
 .catalog-item h4 {
   min-height: 40px;
   padding: 0 25px;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 10px;
 
   font-family: "PT Sans", "Arial", sans-serif;
