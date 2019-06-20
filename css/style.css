@@ -173,58 +173,92 @@ a {
   box-shadow: 0 5px 0 #8e1e26;
 }
 
-.header-search-label {
-  position: absolute;
-  top: 13px;
-  left: 238px;
+.toolbar-item {
+  display: block;
+  
+  margin: 0;
+  padding: 0;
+  
+  font-size: 17px;
+  line-height: 1.06;
+}
 
+.serching-form {
+  position: relative;
+  display: block;
+
+  width: 28.7234%;
+}
+
+.serching-string {
+  display: block;
+  
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+  width: 100%;
+  margin: 0;
+
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 48px;
+  
+  font-size: 17px;
+  line-height: 1.06;
+  font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+  color: #ffffff;
+  
+  border: none;
+  background-color: #293449;
+}
+
+.icon-search {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  
+  margin: 0;
+  padding: 0;
   width: 17px;
   height: 17px;
-
-  background: transparent;
-  border: none;
+  
+  fill: white;
   opacity: 0.3;
 }
 
-.header-search-form:hover ~ .header-search-label,
-.header-search-form:focus ~ .header-search-label,
-.header-search-label:hover,
-.header-search-label:focus {
-  opacity: 1;
-}
-
-.header-search-form:focus ~ .header-search-label path {
-  fill: #ee3643;
-}
-
-.header-search-form {  
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  width: 222px;
-  height: 42px;
-
-  color: #fff;
-
-  padding: 0;
-  padding-left: 48px;
-
-  border: 0;
-  background-image: url("../img/svg/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position:15px center;
-  background-color: transparent;
-}
-
-.header-search-form:hover {
+.serching-string:hover {
   background-color: #212a3a;
 }
 
-.header-search-form:focus {
-  color: #000;
+.serching-string:focus {
+  color: #000000;
+  
+  background-color: #ffffff;
+  outline: none;
+}
 
-  background-color: #fff;
+.serching-string:hover + .icon-search {
+  opacity: 1;
+}
+
+.serching-string:focus + .icon-search {
+  fill: #9a212a;
+  opacity: 1;
+}
+
+.serching-form .searching-button {
+  display: block;
+  
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  
+  font-size: 0;
+  
+  border: none;
 }
 
 .bookmarks,
